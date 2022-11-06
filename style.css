@@ -945,7 +945,6 @@ button:hover{
 	font-size:18px;
 }
 form{
-	display:flex;
 	margin:0 auto;
 	position:relative;
 	padding:6px 10px;
