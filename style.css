@@ -5,8 +5,16 @@
 	font-family: "Dosis", sans-serif;
 }
 @media (min-width:320px){
-	header nav{
+	.nav ul{
 		display:none;
+	}
+	nav .bar{
+		display:flex;
+		padding:30px 15px;
+		font-size:24px;
+		width:100%;
+		margin:0 auto;
+		justify-content:end;
 	}
 	.feature-row-1{
 		padding:70px 0px 20px;
@@ -282,8 +290,11 @@
 	}
 }
 @media (min-width:1025px){
-	header nav{
+	.nav ul{
 		display:flex;
+	}
+	nav .bar{
+		display:none;
 	}
 	.feature-row-1{
 		padding:150px 0px;
@@ -398,9 +409,6 @@ nav img{
 	padding:25px 0px;
 	font-size:30px;
 }
-nav ul{
-	display:flex;
-}
 header{
 	width:100%;
 	position:fixed;
@@ -412,6 +420,7 @@ header{
 header nav{
 	width:80%;
 	margin:0 auto;
+	display:flex;
 	justify-content:space-between;
 }
 .feature-row-1{
@@ -808,6 +817,7 @@ button{
 .gallery-img .card img{
 	width:100%;
 	transition:all 0.5s ease;
+	vertical-align:middle;
 }
 .gallery-img .card:hover img{
 	transform:scale(1.1,1.1);
